@@ -24,10 +24,17 @@ function WorkExperience({}: Props) {
       </h3>
 
       <div className="w-full flex space-x-5 overflow-x-scroll p-10 snap-x snap-mandatory scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#f7ab0a]/80">
-        <ExperienceCard />
-        <ExperienceCard />
-        <ExperienceCard />
-        <ExperienceCard />
+        <ExperienceCard
+          logo="https://247codecamp.com/wp-content/uploads/learn-press-profile/1/3719038a8cffeab02311286a419a4d61.jpeg"
+          position="Junior Blockchain Instructor"
+          company="247codecamp"
+          summary={[
+            "Develop educational content on Solidity smart contracts",
+            "Create real-world project-based learning experiences",
+            "Guide and mentor students",
+            "Collaborate to improve the curriculum and learning experiences",
+          ]}
+        />
       </div>
     </motion.div>
   );

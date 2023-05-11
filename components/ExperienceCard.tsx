@@ -1,9 +1,19 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-type Props = {};
+type Props<T> = {
+  logo: string;
+  position: string;
+  company: string;
+  summary: Array<T>;
+};
 
-function ExperienceCard({}: Props) {
+function ExperienceCard<T extends React.ReactNode>({
+  logo,
+  position,
+  company,
+  summary,
+}: Props<T>) {
   return (
     <article className="flex flex-col rounded-lg items-center space-y-7 flex-shrink-0 w-[500px] md:w-[600px] xl:w[900px] snap-center bg-[#292929] p-10 hover:opacity-100 opacity-40 cursor-pointer transition-opacity duration-200 overflow-hidden">
       <motion.img
@@ -22,15 +32,15 @@ function ExperienceCard({}: Props) {
           once: true,
         }}
         className="w-32 h-32 rounded-full xl:w-[200px] xl:h-[200px] object-cover object-center"
-        src="https://247codecamp.com/wp-content/uploads/learn-press-profile/1/3719038a8cffeab02311286a419a4d61.jpeg"
+        src={logo}
         alt=""
       />
 
       <div className="px-0 md:px-10">
         <h4 className="text-4xl font-light">
-          Junior Instructor of 247codecamp
+          {position}
         </h4>
-        <p className="font-bold text-2xl mt-1">247codecamp</p>
+        <p className="font-bold text-2xl mt-1">{company}</p>
         <div className="flex space-x-2 my-2">
           <img
             className="h-10 w-10 rounded-full"
@@ -52,8 +62,9 @@ function ExperienceCard({}: Props) {
           Started work... - Ended...
         </p>
         <ul className="list-disc space-y-4 ml-5 text-lg">
-          <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-          <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+          {summary.map((point, i) => (
+            <li key={i}>{point}</li>
+          ))}
         </ul>
       </div>
     </article>

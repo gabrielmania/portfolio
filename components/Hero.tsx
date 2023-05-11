@@ -21,8 +21,8 @@ function Hero({}: Props) {
       <BackgroundCircles />
       <img
         className="relative rounded-full h-32 w-32 mx-auto object-cover"
-        src="https://media.licdn.com/dms/image/C5603AQFqEOzBsgfxqQ/profile-displayphoto-shrink_800_800/0/1517004252742?e=1689206400&v=beta&t=uPM9o0UmEFu8t9pTCfBr2ctNlXcoiAQDJj-u8qxBw3M"
-        alt=""
+        src="profilePic.jpg"
+        alt="Profile Picture"
       />
       <div className="z-20">
         <h2 className="text-sm uppercase text-gray-500 pb-2 tracking-[15px]">
