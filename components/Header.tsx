@@ -25,7 +25,7 @@ function Header({}: Props) {
         className="flex flex-row items-center"
       >
         <SocialIcon
-          url="https://github.com/gabrielmania"
+          url="https://www.linkedin.com/in/gabrielmania/"
           fgColor="gray"
           bgColor="transparent"
         />
@@ -35,7 +35,7 @@ function Header({}: Props) {
           bgColor="transparent"
         />
         <SocialIcon
-          url="https://github.com/gabrielmania"
+          url="https://www.facebook.com/mania.gabb/"
           fgColor="gray"
           bgColor="transparent"
         />

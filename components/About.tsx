@@ -46,16 +46,7 @@ function About({}: Props) {
           background
         </h4>
         <p className="text-base">
-          I'm a Full-Stack Web Developer and Blockchain Expert who creates
-          innovative solutions that push the digital space boundaries. With
-          expertise in MERN, Solidity, and Rust programming, I transform the
-          digital landscape with complex projects. I've developed decentralized
-          applications and smart contracts for cutting-edge blockchain
-          platforms. My passion for the latest technologies and staying ahead of
-          the curve lets me create transformative solutions for my clients. I
-          can bring your vision to life by creating dynamic web applications or
-          leveraging the blockchain's power for your business. Let's work
-          together to create a brighter digital future.
+        I'm a Full-Stack Web Developer, Rust Developer, and Blockchain Developer. With expertise in MERN stack for web development and creating Solidity smart contracts, I have the skills to tackle complex projects. Currently, I'm a Junior Blockchain Instructor at 247CodeCamp, where I help educate the next generation of blockchain developers.
         </p>
       </div>
     </motion.div>
