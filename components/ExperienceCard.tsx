@@ -5,14 +5,20 @@ type Props<T> = {
   logo: string;
   position: string;
   company: string;
-  summary: Array<T>;
+  summary: Array<string>;
+  dateStarted: string;
+  dateEnded: string;
+  technologies: Array<string>;
 };
 
-function ExperienceCard<T extends React.ReactNode>({
+function ExperienceCard<T>({
   logo,
   position,
   company,
   summary,
+  dateStarted,
+  dateEnded,
+  technologies,
 }: Props<T>) {
   return (
     <article className="flex flex-col rounded-lg items-center space-y-7 flex-shrink-0 w-[500px] md:w-[600px] xl:w[900px] snap-center bg-[#292929] p-10 hover:opacity-100 opacity-40 cursor-pointer transition-opacity duration-200 overflow-hidden">
@@ -37,29 +43,15 @@ function ExperienceCard<T extends React.ReactNode>({
       />
 
       <div className="px-0 md:px-10">
-        <h4 className="text-4xl font-light">
-          {position}
-        </h4>
+        <h4 className="text-4xl font-light">{position}</h4>
         <p className="font-bold text-2xl mt-1">{company}</p>
         <div className="flex space-x-2 my-2">
-          <img
-            className="h-10 w-10 rounded-full"
-            src="https://www.rust-lang.org/logos/rust-logo-512x512.png"
-            alt=""
-          />
-          <img
-            className="h-10 w-10 rounded-full"
-            src="https://www.rust-lang.org/logos/rust-logo-512x512.png"
-            alt=""
-          />
-          <img
-            className="h-10 w-10 rounded-full"
-            src="https://www.rust-lang.org/logos/rust-logo-512x512.png"
-            alt=""
-          />
+          {technologies.map((techSrc, i) => (
+            <img key={i} className="h-10 w-10 rounded-full" src={techSrc} />
+          ))}
         </div>
         <p className="uppercase py-5 text-gray-300">
-          Started work... - Ended...
+          {dateStarted} - {dateEnded}
         </p>
         <ul className="list-disc space-y-4 ml-5 text-lg">
           {summary.map((point, i) => (

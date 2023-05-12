@@ -22,20 +22,17 @@ function Skills({}: Props) {
       </h3>
 
       <div className="grid grid-cols-4 gap-5">
-        <Skill />
-        <Skill />
-        <Skill />
-        <Skill />
-        <Skill />
-        <Skill />
-        <Skill />
-        <Skill />
-        <Skill />
-        <Skill />
-        <Skill />
-        <Skill />
-        <Skill />
-        <Skill />
+        <Skill imageSrc="expressjs.png" progress="70%" directionLeft={true} />
+        <Skill imageSrc="mongodb.png" progress="70%" directionLeft={true} />
+        <Skill imageSrc="nextjs.png" progress="80%" directionLeft={true} />
+        <Skill imageSrc="nodejs.png" progress="70%" directionLeft={true} />
+        <Skill imageSrc="reactjs.png" progress="80%" directionLeft={true} />
+        <Skill imageSrc="rust.png" progress="60%" directionLeft={true} />
+        <Skill imageSrc="solidity.png" progress="80%" directionLeft={true} />
+        <Skill imageSrc="tailwindcss.png" progress="90%" directionLeft={true} />
+        <Skill imageSrc="autocad.png" progress="90%" directionLeft={false} />
+        <Skill imageSrc="solidworks.png" progress="80%" directionLeft={false} />
+        <Skill imageSrc="msoffice.png" progress="80%" directionLeft={false} />
       </div>
     </motion.div>
   );

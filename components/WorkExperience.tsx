@@ -25,15 +25,41 @@ function WorkExperience({}: Props) {
 
       <div className="w-full flex space-x-5 overflow-x-scroll p-10 snap-x snap-mandatory scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#f7ab0a]/80">
         <ExperienceCard
-          logo="https://247codecamp.com/wp-content/uploads/learn-press-profile/1/3719038a8cffeab02311286a419a4d61.jpeg"
+          logo="247codecamp.jpeg"
           position="Junior Blockchain Instructor"
           company="247codecamp"
+          dateStarted="January 2023"
+          dateEnded="Present"
           summary={[
             "Develop educational content on Solidity smart contracts",
             "Create real-world project-based learning experiences",
             "Guide and mentor students",
             "Collaborate to improve the curriculum and learning experiences",
           ]}
+          technologies={[
+            "expressjs.png",
+            "mongodb.png",
+            "nextjs.png",
+            "nodejs.png",
+            "reactjs.png",
+            "rust.png",
+            "solidity.png",
+            "tailwindcss.png",
+          ]}
+        />
+        <ExperienceCard
+          logo="iee.jpg"
+          position="Staff Engineer"
+          company="International Elevator & Equipment, Inc."
+          dateStarted="December 2014"
+          dateEnded="July 2017"
+          summary={[
+            "Created elevator and escalator layout plans.",
+            "Led technical stakeholder meetings.",
+            "Conducted on-site system inspections.",
+            "Ensured compliance with industry standards.",
+          ]}
+          technologies={["autocad.png", "solidworks.png", "msoffice.png"]}
         />
       </div>
     </motion.div>
