@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
+import ProjectCard from "./ProjectCard";
 
 type Props = {};
 
@@ -24,37 +25,22 @@ function Projects({}: Props) {
       </h3>
 
       <div className="relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#f7ab0a]/80">
-        {projects.map((project, i) => (
-          <div key={i} className="w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center p-20 md:p-44 h-screen">
-            <motion.img
-              initial={{
-                y: -300,
-                opacity: 0,
-              }}
-              transition={{ duration: 1.2 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              src="https://images.vexels.com/media/users/3/130078/isolated/preview/695664d2490fd207af48a719d4fc3df3-desktop-computer-icon-by-vexels.png"
-              alt=""
-            />
-
-            <div className="space-y-10 px-0 md:px-10 max-w-6xl">
-              <h4 className="text-4xl font-semibold text-center">
-                <span className="underline decoration-[#f7ab0a]">
-                  Case Study {i + 1} of {projects.length}:
-                </span>{" "}
-                UPS clone
-              </h4>
-
-              <p className="text-lg text-center md:text-left">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum
-                reprehenderit tempora voluptas esse? Temporibus id esse nihil,
-                quasi, vero incidunt explicabo illo accusantium nam suscipit
-                magnam, harum placeat. Perspiciatis, cumque?
-              </p>
-            </div>
-          </div>
-        ))}
+        <ProjectCard
+          imageSrc="vertuze_digital.png"
+          projectId={1}
+          projectsLength={2}
+          projectTitle="Vertuze Digital"
+          projectDescription="Vertuze Digital is a responsive online store for digital goods like movies, music, and games, built with NextJS, MongoDB, and TailwindCSS. This modern web application offers fast page loads, enhanced SEO, flexible data handling, and customizable design for a seamless user experience."
+          projectUrl="https://vertuze-digital.vercel.app/"
+        />
+        <ProjectCard
+          imageSrc="yelpcamp.png"
+          projectId={2}
+          projectsLength={2}
+          projectTitle="YelpCamp"
+          projectDescription="YelpCamp is a user-friendly web application for sharing and reviewing campsites, built with HTML, Bootstrap, JavaScript, NodeJS, ExpressJS, and MongoDB. It features a navigable interface, reliable server-side infrastructure, and scalable data handling. With user authentication and authorization, it offers full access to logged-in users. It effectively connects camping enthusiasts and aids in discovering new sites."
+          projectUrl="https://yelpcamp-dl1i.onrender.com/"
+        />
       </div>
 
       <div className="w-full absolute top-[30%] bg-[#f7ab0a]/10 left-0 h-[500px] -skew-y-12"></div>

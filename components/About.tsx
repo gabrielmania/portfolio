@@ -46,8 +46,16 @@ function About({}: Props) {
           <span className="underline decoration-[#f7ab0a]">little</span>{" "}
           background
         </h4>
-        <p className="text-base">
-        I'm a Full-Stack Web Developer, Rust Developer, and Blockchain Developer. With expertise in MERN stack for web development and creating Solidity smart contracts, I have the skills to tackle complex projects. Currently, I'm a Junior Blockchain Instructor at 247CodeCamp, where I help educate the next generation of blockchain developers.
+        <p className="text-base text-justify">
+          I'm Gabriel Mania, a Full-Stack Web, Rust, and Blockchain Developer
+          passionate about creating innovative digital solutions. I excel in
+          developing dynamic web applications using the MERN stack and
+          Rust-based high-performance systems. In the blockchain realm, I
+          develop decentralized applications, create smart contracts, and
+          educate future developers as a Junior Blockchain Instructor at
+          247CodeCamp. My expertise can help realize your vision for dynamic web
+          applications, Rust solutions, or blockchain-based business
+          advancements. Let's collaborate to shape your digital future.
         </p>
       </div>
     </motion.div>
