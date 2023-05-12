@@ -26,7 +26,7 @@ function WorkExperience({}: Props) {
       <div className="w-full flex space-x-5 overflow-x-scroll p-10 snap-x snap-mandatory scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#f7ab0a]/80">
         <ExperienceCard
           logo="247codecamp.jpeg"
-          position="Junior Blockchain Instructor"
+          position="Blockchain Instructor"
           company="247codecamp"
           dateStarted="January 2023"
           dateEnded="Present"

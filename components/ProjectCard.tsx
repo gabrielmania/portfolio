@@ -29,11 +29,11 @@ function ProjectCard({
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         src={imageSrc}
-        className="xl:w-7/12"
+        className="xl:w-6/12 w-10/12"
       />
 
       <div className="space-y-10 px-0 md:px-10 max-w-6xl">
-        <h4 className="text-4xl font-semibold text-center">
+        <h4 className="text-3xl font-semibold text-center">
           <span className="underline decoration-[#f7ab0a]">
             Case Study {projectId} of {projectsLength}:
           </span>{" "}

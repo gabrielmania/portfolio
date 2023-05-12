@@ -47,7 +47,7 @@ function About({}: Props) {
           background
         </h4>
         <p className="text-base text-justify">
-          I'm Gabriel Mania, a Full-Stack Web, Rust, and Blockchain Developer
+          I&apos;m Gabriel Mania, a Full-Stack Web, Rust, and Blockchain Developer
           passionate about creating innovative digital solutions. I excel in
           developing dynamic web applications using the MERN stack and
           Rust-based high-performance systems. In the blockchain realm, I
@@ -55,7 +55,7 @@ function About({}: Props) {
           educate future developers as a Junior Blockchain Instructor at
           247CodeCamp. My expertise can help realize your vision for dynamic web
           applications, Rust solutions, or blockchain-based business
-          advancements. Let's collaborate to shape your digital future.
+          advancements. Let&apos;s collaborate to shape your digital future.
         </p>
       </div>
     </motion.div>
