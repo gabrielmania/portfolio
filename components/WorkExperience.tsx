@@ -25,9 +25,33 @@ function WorkExperience({}: Props) {
 
       <div className="w-full flex space-x-5 overflow-x-scroll p-10 snap-x snap-mandatory scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#f7ab0a]/80">
         <ExperienceCard
+          logo="freelance.png"
+          position="Freelance Web Developer"
+          company="Freelance"
+          dateStarted="March 2023"
+          dateEnded="Present"
+          summary={[
+            "Develops responsive, modern websites",
+            "Integrates third-party APIs",
+            "Applies UX/UI for intuitive design",
+            "Liaises effectively with clients",
+          ]}
+          technologies={[
+            "nextjs.png",
+            "reactjs.png",
+            "tailwindcss.png",
+            "nodejs.png",
+            "expressjs.png",
+            "mongodb.png",
+            "prisma.png",
+            "javascript.png",
+            "typescript.png",
+          ]}
+        />
+        <ExperienceCard
           logo="247codecamp.jpeg"
           position="Blockchain Instructor"
-          company="247codecamp"
+          company="OneCodeCamp"
           dateStarted="January 2023"
           dateEnded="Present"
           summary={[
@@ -37,14 +61,14 @@ function WorkExperience({}: Props) {
             "Collaborate to improve the curriculum and learning experiences",
           ]}
           technologies={[
+            "solidity.png",
+            "nextjs.png",
+            "reactjs.png",
+            "tailwindcss.png",
+            "nodejs.png",
             "expressjs.png",
             "mongodb.png",
-            "nextjs.png",
-            "nodejs.png",
-            "reactjs.png",
             "rust.png",
-            "solidity.png",
-            "tailwindcss.png",
           ]}
         />
         <ExperienceCard
