@@ -27,9 +27,16 @@ function Skills({}: Props) {
         <Skill imageSrc="nextjs.png" progress="80%" directionLeft={true} />
         <Skill imageSrc="nodejs.png" progress="70%" directionLeft={true} />
         <Skill imageSrc="reactjs.png" progress="80%" directionLeft={true} />
-        <Skill imageSrc="rust.png" progress="60%" directionLeft={true} />
-        <Skill imageSrc="solidity.png" progress="80%" directionLeft={true} />
-        <Skill imageSrc="tailwindcss.png" progress="90%" directionLeft={true} />
+        <Skill imageSrc="javascript.png" progress="80%" directionLeft={true} />
+        <Skill imageSrc="typescript.png" progress="50%" directionLeft={true} />
+        <Skill imageSrc="prisma.png" progress="50%" directionLeft={true} />
+        <Skill imageSrc="rust.png" progress="60%" directionLeft={false} />
+        <Skill imageSrc="solidity.png" progress="80%" directionLeft={false} />
+        <Skill
+          imageSrc="tailwindcss.png"
+          progress="90%"
+          directionLeft={false}
+        />
         <Skill imageSrc="autocad.png" progress="90%" directionLeft={false} />
         <Skill imageSrc="solidworks.png" progress="80%" directionLeft={false} />
         <Skill imageSrc="msoffice.png" progress="80%" directionLeft={false} />
